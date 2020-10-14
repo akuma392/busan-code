@@ -29,8 +29,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-    line-height: 1.3;
-    font-family: 'Poppins', sans-serif;
+    line-height: 1;
+    
 
 }
 ol, ul {
@@ -48,16 +48,20 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.3;
+    
+}
 /* General */
 .container{
-    width: 1100px;
+    max-width:1100px;
     margin: 0 auto;
     padding: 10px 0;
 
 }
 .container1{
-    width: 900px;
+   max-width:  900px;
     margin: 0 auto;
     padding: 10px 0;
 }
@@ -86,8 +90,8 @@ h3{
     font-weight: 700;
 }
 h4{
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 500;
     margin: 10px 0;
 }
 p{
@@ -253,6 +257,11 @@ font-weight: 200;
 }
 .services-block p{
     color: rgb(87, 80, 80);
+    font-size: 8px;
+}
+.services-block span{
+    font-size: 30px;
+    color: rgb(53, 50, 50);
 }
 .services-btn{
     text-align: center;
@@ -261,23 +270,27 @@ font-weight: 200;
 .services-btn  .btn{
     background-color: white;
     color: rgb(206, 36, 87);
-    border: 2px solid rgb(206, 36, 87) ;
+    border: 1px solid rgb(206, 36, 87) ;
     text-align: center;
     font-size: 9px;
 }
 /* cases */
 .cases{
-    background: url("assets/cases/completed_case_2.png") 74% 0 no-repeat, url("assets/cases/completed_case_1.png") 100% 0 no-repeat;
+   background: url("assets/cases/completed_case_2.png") 74% 0 no-repeat, url("assets/cases/completed_case_1.png") 100% 0 no-repeat;
 
     height: 400px;
     background-size: 20%;
     margin: 80px 0;
 
 }
+.cases-image{
+    width: 250px;
+    height: 300px;
+}
 .cases .btn{
     background-color: white;
     color: rgb(206, 36, 87);
-    border: 2px solid rgb(206, 36, 87) ;
+    border: 1px solid rgb(206, 36, 87) ;
     font-size: 9px;
 }
 .cases-box{
@@ -295,7 +308,7 @@ font-weight: 200;
 }
 .block5{
     width: 300px;
-    height: 400px;
+    height: 300px;
    
     padding: 20px;
 }
@@ -350,10 +363,10 @@ h6{
 }
 /* call back */
 .call-back{
-    background-color: #3d3d84;
+    background-color: #16166d;
     color: white;
-    padding: 30px 0;
-    margin: 80px 0;
+    padding: 50px 0;
+    margin: 50px 0;
 
 }
 .flex1{
@@ -364,13 +377,17 @@ h6{
     width: 30%;
     box-sizing: border-box;
 }
+.left-col p{
+    color: white;
+    font-weight: 200;
+}
 .left-col h4{
     font-size: 24px;
     font-weight: 700;
 }
 .right-col{
     flex: 0 1 60%;
-    margin-left: 100px;
+    margin-left: 200px;
     box-sizing: border-box;
 }
 .right-col-block1{
@@ -380,20 +397,22 @@ h6{
 .call-name{
     font-size: 8px;
     border: 1px solid rgb(139, 139, 139);
-    padding: 5px 150px 5px 8px;
+    padding: 8px 150px 8px 8px;
     display: inline-block;
+    border-radius: 2px;
 }
 .call-phone{
     font-size: 8px;
     border: 1px solid rgb(139, 139, 139);
-    padding: 5px 150px 5px 8px;
+    padding: 8px 150px 8px 8px;
     display: inline-block;
     margin-left: 8px;
+    border-radius: 2px;
 }
 .call-services{
     font-size: 8px;
     border: 1px solid rgb(139, 139, 139);
-    padding: 5px 200px 5px 8px;
+    padding: 8px 200px 8px 8px;
     display: inline-block
 
 }
@@ -437,6 +456,7 @@ h6{
     font-size: 15px;
     color: #3d3d84;
     padding-left: 0;
+    font-weight: 500;
 }
 .footer span{
     color: rgb(206, 36, 87); ;
@@ -553,6 +573,7 @@ footer{
     font-size: 9px;
     margin: 10px 0;
     color: rgb(46, 44, 44);
+    font-weight: 200;
 }
 .search{
     margin-left: 10px;
@@ -561,7 +582,8 @@ footer{
     padding: 2px 5px;
 }
 .side-btn{
-    padding: 3px 90px;
+    padding: 8px 90px;
+    border-radius: 4px;
     color: rgb(206, 36, 87)  ;
     border:1px solid rgb(206, 36, 87) ;
     display: inline-block;
@@ -581,6 +603,11 @@ footer{
     font-size: 8px;
     color: gray;
     margin-left: 10px;
+}
+.recent-post p{
+    color: black;
+    font-weight: 500;
+    font-size: 9px;
 }
 /* tag clouds */
 .flex-side-block{
@@ -686,10 +713,12 @@ footer{
 }
 .contact-list{
     margin: 10px 0;
+    color: rgb(56, 55, 55);
 }
 .contact-list span{
-    font-size: 12px;
+    font-size: 10px;
     padding-left: 8px;
+    font-weight: 500;
 }
 .contact-list p{
     padding-left: 18px;
